@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F7F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="← Back"
+            android:textColor="#2D7454"
+            android:textStyle="bold"
+            android:backgroundTint="#FFFFFF"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register Member"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#2D7454" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add a new SHG member"
+            android:textSize="16sp"
+            android:textColor="#6D5A7A"
+            android:layout_marginTop="6dp" />
+
+        <!-- PROFILE PHOTO BOX -->
+        <LinearLayout
+            android:id="@+id/photoBox"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="26dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:src="@drawable/photo_camera"
+                app:tint="#8C8C9A" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPLOAD PHOTO"
+                android:textColor="#8C8C9A"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/nameEt"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Full Name"
+            android:background="#FFFFFF"
+            android:padding="14dp"
+            android:layout_marginTop="28dp" />
+
+        <EditText
+            android:id="@+id/idEt"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Unique Member ID"
+            android:background="#FFFFFF"
+            android:padding="14dp"
+            android:layout_marginTop="14dp" />
+
+        <EditText
+            android:id="@+id/phoneEt"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:background="#FFFFFF"
+            android:padding="14dp"
+            android:layout_marginTop="14dp" />
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="Save Member"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2D7454"
+            android:layout_marginTop="28dp" />
+
+    </LinearLayout>
+</ScrollView>

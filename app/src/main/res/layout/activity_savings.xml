@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F7F5"
+    android:padding="22dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="← Back"
+            android:textColor="#2D7454"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="@android:color/transparent"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/savingsTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Savings"
+            android:textColor="#6D5A7A"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="22dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="24dp"
+            android:elevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="22dp">
+
+                <ImageView
+                    android:id="@+id/savingsIconIv"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:src="@drawable/ic_savings_new"
+                    android:contentDescription="Savings Icon"
+                    app:tint="#2D7454"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    android:id="@+id/recordWeeklyTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Record Weekly Contribution"
+                    android:textColor="#6D5A7A"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:text="SELECT MEMBER"
+                android:textColor="#A7A0AD"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/memberSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_input"
+                android:padding="14dp" />
+
+            <TextView
+                android:text="AMOUNT (₹)"
+                android:textColor="#A7A0AD"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.22"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/amountEt"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:hint="Enter amount"
+                android:inputType="numberDecimal"
+                android:textSize="18sp"
+                android:background="@drawable/bg_input"
+                android:padding="14dp" />
+
+            <TextView
+                android:text="STATUS"
+                android:textColor="#A7A0AD"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.22"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/statusToggleBox"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_status_box"
+                android:padding="6dp"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/paidToggle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Paid"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/bg_green_button" />
+
+                <TextView
+                    android:id="@+id/pendingToggle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Pending"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="#2D7454" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/recordPaymentBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/bg_green_button"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginTop="26dp">
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/ic_record_payment"
+                    android:contentDescription="Record Icon"
+                    app:tint="#FFFFFF"
+                    android:layout_marginEnd="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Record Payment"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:id="@+id/historyIconIv"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_history"
+                app:tint="#6D5A7A"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/ledgerHistoryTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ledger History"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#6D5A7A" />
+
+            <EditText
+                android:id="@+id/ledgerSearchEt"
+                android:layout_width="120dp"
+                android:layout_height="42dp"
+                android:hint="Search"
+                android:textSize="14sp"
+                android:background="@drawable/bg_input"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="MEMBER DETAILS"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="#A59AAF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STATUS"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="#A59AAF" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ledgerRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F7F5"
+    android:padding="22dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="← Back"
+            android:textColor="#2D7454"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/repaymentTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loan Repayment"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#2D7454"
+            android:layout_marginTop="12dp" />
+
+        <Spinner
+            android:id="@+id/loanSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:id="@+id/loanInfoText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loan details will appear here"
+            android:textSize="16sp"
+            android:textColor="#6D5A7A"
+            android:background="#FFFDF5"
+            android:padding="16dp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/repaymentAmountEt"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Repayment Amount"
+            android:inputType="numberDecimal"
+            android:background="#FFFFFF"
+            android:padding="14dp"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/saveRepaymentBtn"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="Record Repayment"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#2D7454"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+</ScrollView>

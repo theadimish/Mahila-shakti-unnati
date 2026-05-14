@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="92dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="14dp"
+    android:background="@drawable/ledger_card_bg">
+
+    <TextView
+        android:id="@+id/memberInitialText"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="P"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#2D7454"
+        android:background="#EAF2EE" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:id="@+id/memberNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Member Name"
+            android:textColor="#6D5A7A"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/memberPhoneText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone: 0000000000"
+            android:textColor="#8C8C9A"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <!-- ✅ ADD THIS -->
+    <TextView
+        android:id="@+id/memberStatusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PAID"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:padding="6dp"
+        android:layout_marginEnd="10dp"
+        android:background="#DDFBE8"
+        android:textColor="#148C4A" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="›"
+        android:textColor="#C5C8D0"
+        android:textSize="34sp" />
+
+</LinearLayout>

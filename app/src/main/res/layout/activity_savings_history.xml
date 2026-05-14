@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F6F7F5"
+    android:paddingStart="22dp"
+    android:paddingEnd="22dp"
+    android:paddingTop="45dp"
+    android:paddingBottom="20dp">
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="← Back"
+        android:textColor="#2D7454"
+        android:textStyle="bold"
+        android:backgroundTint="#FFFFFF"
+        android:layout_marginBottom="18dp" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contribution History"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#3A3740" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Member savings records"
+        android:textSize="15sp"
+        android:textColor="#6D5A7A"
+        android:layout_marginTop="6dp" />
+
+    <ListView
+        android:id="@+id/historyList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="22dp"
+        android:divider="#EEEEEE"
+        android:dividerHeight="10dp"
+        android:background="#F6F7F5" />
+
+</LinearLayout>
